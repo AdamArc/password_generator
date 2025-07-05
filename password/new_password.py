@@ -12,3 +12,4 @@ def generate_password(length=12):
 # Contoh penggunaan
 password_length = 12  # Anda dapat memilih panjang password yang diinginkan
 print("Password baru Anda:", generate_password(password_length))
+
