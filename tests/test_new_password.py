@@ -15,3 +15,14 @@ Akan lebih bagus jika kamu bisa membuat lebih banyak tes!
 Tes untuk memastikan panjang password sesuai dengan yang diminta
 Tes untuk memastikan dua password yang dibuat berurutan tidak sama
 """
+
+def test_password_length():
+    lengths_to_test = [8, 12, 16, 20, 32]
+    for length in lengths_to_test:
+        password = generate_password(length)
+        assert len(password) == length
+
+def test_password_uniqueness():
+    password1 = generate_password(12)
+    password2 = generate_password(12)
+    assert password1 != password2
