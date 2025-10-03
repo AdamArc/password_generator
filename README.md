@@ -1,4 +1,4 @@
-# Program Generator Password Acak
+# Program Generator Password Acak1
 
 Program ini dirancang untuk menghasilkan password acak dengan jumlah karakter yang ditentukan. Password dapat berisi huruf besar dan kecil, angka, dan karakter khusus.
 
