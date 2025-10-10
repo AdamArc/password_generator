@@ -7,6 +7,8 @@ Program ini dirancang untuk menghasilkan password acak dengan jumlah karakter ya
 - Menghasilkan password acak dengan panjang yang ditentukan
 - Dapat menggunakan huruf, angka dan karakter khusus dalam password
 - Aplikasi konsol yang sederhana dan mudah digunakan
+- Sudah dilengkapi dengan pengujian otomatis menggunakan pytest 
+  (contoh: uji panjang password, karakter valid, dan keunikan password)
 
 ## Memulai
 
