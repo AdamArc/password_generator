@@ -1,10 +1,11 @@
 # Program Generator Password Acak
 
 Program ini dirancang untuk menghasilkan password acak dengan jumlah karakter yang ditentukan. Password dapat berisi huruf besar dan kecil, angka, dan karakter khusus.
+Password juga memiliki ketentuannya berupa panjang password dan keunikan password.
 
 ## Fitur
 
-- Menghasilkan password acak dengan panjang yang ditentukan
+- Menghasilkan password acak dengan panjang yang ditentukan yaitu (12)
 - Dapat menggunakan huruf, angka dan karakter khusus dalam password
 - Aplikasi konsol yang sederhana dan mudah digunakan
 
