@@ -8,6 +8,20 @@ def test_password_characters():
     for char in password:
         assert char in valid_characters
 
+
+def test_password_length():
+    """Tes untuk memastikan panjang password sesuai dengan yang diminta"""
+    for length in [8, 12, 20, 50, 100]:
+        password = generate_password(length)
+        assert len(password) == length, f"Panjang password {len(password)} tidak sesuai (harusnya {length})"
+
+def test_password_uniqueness():
+    """Tes untuk memastikan dua password yang dibuat berurutan tidak sama"""
+    password1 = generate_password(16)
+    password2 = generate_password(16)
+    assert password1 != password2, "Dua password berurutan tidak boleh sama"
+
+
 """
 Tambahkan satu atau lebih tes dari pilihan berikut. Atau buat tes kamu sendiri.
 Akan lebih bagus jika kamu bisa membuat lebih banyak tes!
