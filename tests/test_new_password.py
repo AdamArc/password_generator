@@ -8,6 +8,16 @@ def test_password_characters():
     for char in password:
         assert char in valid_characters
 
+def test_password_lenght():
+    length = 12
+    password = generate_password(length)
+    assert len(password) == length
+
+def test_password_notsame():
+    pas1=generate_password(1)
+    pas2=generate_password(1)
+    assert pas1!=pas2
+
 """
 Tambahkan satu atau lebih tes dari pilihan berikut. Atau buat tes kamu sendiri.
 Akan lebih bagus jika kamu bisa membuat lebih banyak tes!
