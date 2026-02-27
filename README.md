@@ -24,6 +24,14 @@ Kemudian kamu dapat menjalankan pengujian dari direktori utama proyek dengan per
 pytest
 ```
 
+## Pengujian Tambahan
+
+Menambahkan fungsi tes panjang password dan tes password beda
+- test_password_length untuk memastikan panjang password sesuai yg diminta
+- test_password_beda untuk memastikan password yg digenerate berbeda dengan password yg telah digenerate
+
 ## Pembuat
+
+Hana
 
 Kodland
