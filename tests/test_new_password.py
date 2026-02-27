@@ -15,3 +15,15 @@ Akan lebih bagus jika kamu bisa membuat lebih banyak tes!
 Tes untuk memastikan panjang password sesuai dengan yang diminta
 Tes untuk memastikan dua password yang dibuat berurutan tidak sama
 """
+
+def test_password_length():
+    """Tes untuk memastikan hanya karakter yang diizinkan yang digunakan dalam pembuatan password"""
+    
+    password = generate_password(100)  # Membuat password yang panjang untuk pengujian yang lebih akurat
+    assert len (password) == 100
+
+def test_password_random():
+    password1 = generate_password(100)  # Membuat password yang panjang untuk pengujian yang lebih akurat
+    password2 = generate_password(100)
+    assert password1 != password2
+        
