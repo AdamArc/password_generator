@@ -26,4 +26,11 @@ pytest
 
 ## Pembuat
 
+## Test
+- Tes untuk memastikan hanya karakter yang diizinkan yang digunakan dalam pembuatan password
+- Tes untuk memastikan panjang password sesuai dengan yang diminta
+- Tes untuk memastikan dua password yang dibuat berurutan tidak sama
+- Tes untuk memastikan panjang password default adalah 12 characters
+
+
 Kodland
