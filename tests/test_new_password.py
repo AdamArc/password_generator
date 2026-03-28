@@ -6,7 +6,24 @@ def test_password_characters():
     valid_characters = string.ascii_letters + string.digits + string.punctuation
     password = generate_password(100)  # Membuat password yang panjang untuk pengujian yang lebih akurat
     for char in password:
-        assert char in valid_characters
+        assert char in valid_characters, f"Karakter '{char}' tidak valid dalam password"
+
+def test_password_length():
+    """Tes untuk memastikan panjang password sesuai dengan yang diminta"""
+    length = 12
+    password = generate_password(length)
+    assert len(password) == length, f"Panjang password {len(password)} tidak sesuai dengan yang diminta {length}"
+
+def test_password_uniqueness():
+    """Tes untuk memastikan dua password yang dibuat berurutan tidak sama"""""
+    password1 = generate_password(12)
+    password2 = generate_password(12)
+    assert password1 != password2, "Dua password yang dibuat berurutan tidak boleh sama"
+
+def test_password_default_length():
+    """Tes untuk memastikan panjang password default adalah 12 characters"""
+    password = generate_password(12)
+    assert len(password) == 12, f"panjang password default {len(password)} tidak sesuai dengan harapan"
 
 """
 Tambahkan satu atau lebih tes dari pilihan berikut. Atau buat tes kamu sendiri.
