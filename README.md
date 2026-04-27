@@ -24,6 +24,9 @@ Kemudian kamu dapat menjalankan pengujian dari direktori utama proyek dengan per
 pytest
 ```
 
+## Change in the code
+- ada code yang baru dari test_new_password.py kita telah menambahkan Tes untuk memastikan panjang password sesuai dengan yang diminta dan Tes untuk memastikan dua password yang dibuat berurutan tidak sama
+
 ## Pembuat
 
 Kodland
