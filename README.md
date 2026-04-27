@@ -27,3 +27,7 @@ pytest
 ## Pembuat
 
 Kodland
+
+## Hal yang ditambahkan 
+menambahkan pengujian Tes untuk memastikan panjang password sesuai dengan yang diminta
+Tes untuk memastikan dua password yang dibuat berurutan tidak sama
