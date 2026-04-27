@@ -20,7 +20,7 @@ def test_password_length():
     password = generate_password(length)
     assert len(password) == length
 
-def test_password_order():
+def test_password_unique():
     length = 200
     password = generate_password(length)
     password2 = generate_password(length)
